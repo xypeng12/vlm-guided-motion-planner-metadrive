@@ -1,0 +1,12 @@
+# Core numerical + image utilities
+numpy>=1.24
+imageio>=2.31
+Pillow>=10.0
+
+# Simulation
+metadrive==0.4.3
+
+# VLM policy runtime
+torch>=2.1
+transformers>=4.41
+
