@@ -58,6 +58,7 @@ from config import (
     GIF_CAND_LEGEND_FONT_SIZE,
 )
 
+print("hello")
 # =========================
 # Main run
 # =========================
