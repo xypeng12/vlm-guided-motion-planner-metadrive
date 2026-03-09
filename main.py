@@ -65,7 +65,7 @@ def run(
     env_cfg: Dict[str, Any],
     out_gif_cam: str,
     out_gif_bev: str,
-    steps: int = 900,
+    steps: int | None = None,
     fps: int = 20,
     instruction: str = HUMAN_INSTRUCTION,
     bev_size: Tuple[int, int] = (800, 800),
@@ -79,6 +79,16 @@ def run(
     env = MetaDriveEnv(dict(env_cfg))
     obs = env.reset()
     warmup_render(env, n=12)
+
+    env_horizon = int(env_cfg.get("horizon", 0) or 0)
+    if steps is None:
+        if env_horizon > 0:
+            max_steps = env_horizon + max(50, int(round(0.10 * env_horizon)))
+        else:
+            max_steps = 900
+    else:
+        max_steps = int(steps)
+    print(f"[INFO] step budget: {max_steps} (env horizon: {env_horizon if env_horizon > 0 else 'unknown'})")
 
     # warm start:
     # map starts can place ego on a very short lane segment (~10m), which makes
@@ -156,7 +166,7 @@ def run(
     last_motion_traj: np.ndarray | None = None
     episode_done = False
 
-    for k in range(steps):
+    for k in range(max_steps):
         sim_t = k * DT
 
         summary = build_state_summary(env, obs)
@@ -433,7 +443,7 @@ def run(
 
     if not episode_done:
         print(
-            f"[INFO] Run reached configured steps={steps} before episode termination "
+            f"[INFO] Run reached configured steps={max_steps} before episode termination "
             f"(env horizon={env_cfg.get('horizon', 'unknown')})."
         )
 
@@ -453,13 +463,12 @@ def run(
 
 if __name__ == "__main__":
     cfg = get_family_config(SCENARIO_FAMILY)
-    run_steps = max(800, int(cfg.get("horizon", 0)) + 50)
 
     run(
         cfg,
         out_gif_cam=OUT_GIF_CAM,
         out_gif_bev=OUT_GIF_BEV,
-        steps=run_steps,
+        steps=None,
         fps=20,
         instruction=HUMAN_INSTRUCTION,
         bev_size=(800, 800),
