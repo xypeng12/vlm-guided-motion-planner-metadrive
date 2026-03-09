@@ -116,6 +116,24 @@ def run(
         s = " ".join(str(x).split())
         return s if len(s) <= max_chars else (s[: max_chars - 3] + "...")
 
+    def collision_detail(step_info: Dict[str, Any]) -> str:
+        if not isinstance(step_info, dict):
+            return ""
+        tags: List[str] = []
+        if bool(step_info.get("crash_vehicle", False)):
+            tags.append("vehicle")
+        if bool(step_info.get("crash_object", False)):
+            tags.append("object")
+        if bool(step_info.get("crash_building", False)):
+            tags.append("building")
+        if bool(step_info.get("crash_human", False)):
+            tags.append("human")
+        if bool(step_info.get("crash_sidewalk", False)):
+            tags.append("sidewalk")
+        if not tags and bool(step_info.get("crash", False)):
+            tags.append("unknown")
+        return ",".join(tags)
+
     def opposite_change(maneuver: str) -> str:
         if maneuver == "ChangeLaneLeft":
             return "ChangeLaneRight"
@@ -136,6 +154,7 @@ def run(
 
     brake_streak = 0
     last_motion_traj: np.ndarray | None = None
+    episode_done = False
 
     for k in range(steps):
         sim_t = k * DT
@@ -281,7 +300,10 @@ def run(
         notes = str(policy_out.get("notes", ""))[:160]
 
         speed = float(safe_getattr(env.vehicle, "speed", 0.0))
+        crash_detail = collision_detail(info)
         lines: List[Any] = []
+        if done and crash_detail:
+            lines.append(f"TERMINAL=COLLISION ({crash_detail})")
         lines.append(f"behavior={m}")
         lines.append(f"speed={speed:.2f}")
         lines.append(f"efficiency={float(w.get('w_efficiency', 0.0)):.2f}")
@@ -398,8 +420,22 @@ def run(
             print(f"k={k:04d} m={m:>14s} reason={reason:>10s} speed={speed:5.2f}")
 
         if done:
+            if crash_detail:
+                hold_frames = int(max(1, round(1.0 * fps)))
+                if frames_cam:
+                    frames_cam.extend([frames_cam[-1].copy() for _ in range(hold_frames)])
+                if frames_bev:
+                    frames_bev.extend([frames_bev[-1].copy() for _ in range(hold_frames)])
+                print(f"[INFO] Collision terminal event: {crash_detail}; extended GIF by {hold_frames} frames.")
             print(f"[INFO] Episode done at step={k}, sim_t={sim_t:.2f}s, terminating run.")
+            episode_done = True
             break
+
+    if not episode_done:
+        print(
+            f"[INFO] Run reached configured steps={steps} before episode termination "
+            f"(env horizon={env_cfg.get('horizon', 'unknown')})."
+        )
 
     env.close()
 
@@ -417,12 +453,13 @@ def run(
 
 if __name__ == "__main__":
     cfg = get_family_config(SCENARIO_FAMILY)
+    run_steps = max(800, int(cfg.get("horizon", 0)) + 50)
 
     run(
         cfg,
         out_gif_cam=OUT_GIF_CAM,
         out_gif_bev=OUT_GIF_BEV,
-        steps=800,
+        steps=run_steps,
         fps=20,
         instruction=HUMAN_INSTRUCTION,
         bev_size=(800, 800),
