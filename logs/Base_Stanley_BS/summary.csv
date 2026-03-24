@@ -1,0 +1,2 @@
+run_dir,total_steps,elapsed_s,total_dist_m,lane_changes,avg_speed_kmh,max_speed_kmh,avg_accel_ms2,max_accel_ms2,min_accel_ms2,total_cost,crash_vehicle_steps,crash_object_steps,broken_line_steps
+20260316_171037_vlm,562,100.89,653.61,17,41.9529,61.1822,0.2733,35.3167,-6.008,9.0,0,0,105

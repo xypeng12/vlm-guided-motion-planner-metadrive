@@ -1,0 +1,635 @@
+timestep,maneuver,reason,block_ahead,dist_to_block_m,vlm_notes,w_efficiency,w_comfort,w_safety,bias_KeepLane,bias_ChangeLaneLeft,bias_ChangeLaneRight,bias_Brake
+34,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+35,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+36,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+37,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+38,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+39,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+40,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+41,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+42,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+43,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+44,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+45,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+46,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+47,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+48,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+49,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+50,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+51,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+52,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+53,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+54,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+55,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+56,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+57,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+58,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+59,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+60,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+61,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+62,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+63,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+64,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+65,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+66,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+67,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+68,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+69,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+70,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+71,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+72,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+73,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+74,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+75,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+76,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+77,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+78,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+79,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+80,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+81,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+82,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+83,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+84,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+85,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+86,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+87,KeepLane,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+88,ChangeLaneRight,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+89,ChangeLaneRight,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+90,ChangeLaneRight,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+91,ChangeLaneRight,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+92,ChangeLaneRight,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+93,ChangeLaneRight,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+94,ChangeLaneRight,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+95,ChangeLaneRight,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+96,ChangeLaneRight,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+97,ChangeLaneRight,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+98,ChangeLaneRight,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+99,ChangeLaneRight,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+100,ChangeLaneRight,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+101,ChangeLaneRight,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+102,ChangeLaneRight,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+103,ChangeLaneRight,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+104,ChangeLaneRight,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+105,ChangeLaneRight,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+106,ChangeLaneRight,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+107,ChangeLaneRight,ok,0,,init,1.0,1.0,1.0,0.0,0.0,0.0,0.0
+108,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+109,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+110,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+111,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+112,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+113,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+114,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+115,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+116,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+117,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+118,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+119,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+120,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+121,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+122,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+123,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+124,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+125,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+126,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+127,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+128,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+129,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+130,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+131,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+132,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+133,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+134,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+135,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+136,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+137,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+138,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+139,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+140,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+141,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+142,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+143,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+144,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+145,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+146,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+147,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+148,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+149,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+150,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+151,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+152,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+153,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+154,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+155,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+156,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+157,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+158,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+159,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+160,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+161,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+162,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+163,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+164,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+165,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+166,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+167,KeepLane,ok,1,49.78,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+168,KeepLane,ok,1,48.55,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+169,KeepLane,ok,1,47.33,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+170,KeepLane,ok,1,46.12,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+171,KeepLane,ok,1,44.91,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+172,KeepLane,ok,1,43.7,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+173,KeepLane,ok,1,42.49,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+174,KeepLane,ok,1,41.28,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+175,KeepLane,ok,1,40.08,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+176,KeepLane,ok,1,38.88,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+177,KeepLane,ok,1,37.68,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+178,ChangeLaneRight,ok,1,36.49,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+179,ChangeLaneRight,ok,1,35.31,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+180,ChangeLaneRight,ok,1,34.17,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+181,ChangeLaneRight,ok,1,33.06,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+182,ChangeLaneRight,ok,1,29.95,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+183,ChangeLaneRight,ok,1,31.33,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+184,ChangeLaneRight,ok,1,30.32,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+185,ChangeLaneRight,ok,1,29.35,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+186,ChangeLaneRight,ok,1,28.41,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+187,ChangeLaneRight,ok,1,27.51,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+188,ChangeLaneRight,ok,1,26.67,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+189,ChangeLaneRight,ok,1,25.87,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+190,KeepLane,ok,1,25.08,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+191,KeepLane,ok,1,24.3,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+192,KeepLane,ok,1,23.52,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+193,KeepLane,ok,1,22.73,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+194,KeepLane,ok,1,21.94,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+195,KeepLane,ok,1,21.16,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+196,Brake,fallback,1,20.38,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+197,Brake,fallback,1,19.62,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+198,Brake,fallback,1,18.88,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+199,Brake,fallback,1,18.17,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+200,Brake,fallback,1,17.49,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+201,Brake,fallback,1,16.83,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+202,Brake,fallback,1,16.2,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+203,Brake,fallback,1,15.59,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+204,Brake,fallback,1,15.01,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+205,Brake,fallback,1,14.45,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+206,Brake,fallback,1,13.92,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+207,Brake,fallback,1,13.4,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+208,Brake,fallback,1,12.92,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+209,Brake,fallback,1,12.46,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+210,Brake,fallback,1,12.02,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+211,Brake,fallback,1,11.61,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+212,Brake,fallback,1,11.22,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+213,Brake,fallback,1,10.86,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+214,Brake,fallback,1,10.52,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+215,Brake,fallback,1,10.21,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+216,Brake,fallback,1,9.93,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+217,Brake,fallback,1,9.67,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+218,Brake,fallback,1,9.43,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+219,Brake,fallback,1,9.21,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+220,Brake,fallback,1,9.03,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+221,Brake,fallback,1,8.86,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+222,Brake,fallback,1,8.71,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+223,Brake,fallback,1,8.59,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+224,Brake,fallback,1,6.28,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+225,Brake,fallback,1,6.21,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+226,Brake,fallback,1,6.15,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+227,Brake,fallback,1,6.12,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+228,Brake,fallback,1,6.09,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+229,Brake,fallback,1,6.09,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+230,Brake,fallback,1,6.1,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+231,Brake,fallback,1,6.14,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+232,Brake,fallback,1,6.18,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+233,Brake,fallback,1,6.25,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+234,Brake,fallback,1,6.33,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+235,Brake,fallback,1,6.42,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+236,Brake,fallback,1,6.53,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+237,Brake,fallback,1,6.65,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+238,Brake,fallback,1,6.78,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+239,Brake,fallback,1,6.92,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+240,Brake,fallback,1,7.08,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+241,Brake,fallback,1,7.25,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+242,Brake,fallback,1,7.43,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+243,Brake,fallback,1,7.62,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+244,ChangeLaneLeft,ok,1,7.82,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+245,ChangeLaneLeft,ok,1,8.03,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+246,ChangeLaneLeft,ok,1,8.22,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+247,ChangeLaneLeft,ok,1,8.38,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+248,ChangeLaneLeft,ok,1,8.56,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+249,ChangeLaneLeft,ok,1,8.75,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+250,ChangeLaneLeft,ok,1,8.96,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+251,ChangeLaneLeft,ok,1,9.19,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+252,ChangeLaneLeft,ok,1,9.41,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+253,ChangeLaneLeft,ok,1,9.63,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+254,ChangeLaneLeft,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+255,ChangeLaneLeft,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+256,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+257,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+258,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+259,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+260,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+261,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+262,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+263,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+264,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+265,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+266,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+267,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+268,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+269,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+270,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+271,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+272,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+273,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+274,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+275,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+276,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+277,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+278,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+279,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+280,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+281,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+282,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+283,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+284,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+285,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+286,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+287,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+288,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+289,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+290,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+291,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+292,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+293,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+294,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+295,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+296,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+297,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+298,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+299,KeepLane,ok,1,9.8,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+300,KeepLane,ok,1,9.52,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+301,KeepLane,ok,1,9.14,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+302,KeepLane,ok,1,8.83,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+303,KeepLane,ok,1,8.43,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+304,KeepLane,ok,1,8.2,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+305,KeepLane,ok,1,8.19,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+306,KeepLane,ok,1,8.2,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+307,KeepLane,ok,1,8.19,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+308,KeepLane,ok,1,8.19,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+309,KeepLane,ok,1,8.19,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+310,KeepLane,ok,1,8.19,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+311,KeepLane,ok,1,8.19,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+312,KeepLane,ok,1,8.18,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+313,KeepLane,ok,1,8.17,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+314,KeepLane,ok,1,8.18,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+315,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+316,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+317,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+318,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+319,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+320,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+321,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+322,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+323,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+324,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+325,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+326,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+327,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+328,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+329,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+330,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+331,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+332,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+333,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+334,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+335,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+336,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+337,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+338,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+339,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+340,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+341,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+342,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+343,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+344,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+345,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+346,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+347,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+348,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+349,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+350,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+351,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+352,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+353,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+354,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+355,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+356,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+357,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+358,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+359,KeepLane,ok,1,49.93,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+360,KeepLane,ok,1,49.11,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+361,KeepLane,ok,1,48.29,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+362,KeepLane,ok,1,49.66,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+363,KeepLane,ok,1,48.82,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+364,KeepLane,ok,1,47.99,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+365,KeepLane,ok,1,47.14,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+366,KeepLane,ok,1,46.29,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+367,KeepLane,ok,1,45.44,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+368,KeepLane,ok,1,44.58,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+369,KeepLane,ok,1,43.72,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+370,Brake,fallback,1,42.85,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+371,Brake,fallback,1,41.99,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+372,Brake,fallback,1,41.13,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+373,Brake,fallback,1,40.28,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+374,Brake,fallback,1,39.45,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+375,Brake,fallback,1,38.62,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+376,Brake,fallback,1,37.81,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+377,Brake,fallback,1,37.0,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+378,Brake,fallback,1,36.2,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+379,Brake,fallback,1,35.42,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+380,Brake,fallback,1,34.65,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+381,Brake,fallback,1,33.88,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+382,Brake,fallback,1,33.13,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+383,Brake,fallback,1,32.39,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+384,Brake,fallback,1,31.65,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+385,Brake,fallback,1,30.93,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+386,Brake,fallback,1,30.22,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+387,Brake,fallback,1,29.52,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+388,Brake,fallback,1,28.83,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+389,Brake,fallback,1,28.15,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+390,Brake,fallback,1,27.48,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+391,Brake,fallback,1,26.82,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+392,Brake,fallback,1,26.16,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+393,Brake,fallback,1,25.49,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+394,ChangeLaneRight,ok,1,24.84,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+395,ChangeLaneRight,ok,1,24.2,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+396,ChangeLaneRight,ok,1,23.61,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+397,ChangeLaneRight,ok,1,23.07,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+398,ChangeLaneRight,ok,1,22.56,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+399,ChangeLaneRight,ok,1,22.08,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+400,ChangeLaneRight,ok,1,21.64,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+401,ChangeLaneRight,ok,1,21.22,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+402,ChangeLaneRight,ok,1,20.82,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+403,ChangeLaneRight,ok,1,20.43,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+404,ChangeLaneRight,ok,1,20.05,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+405,ChangeLaneRight,ok,1,39.32,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+406,KeepLane,ok,1,39.0,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+407,KeepLane,ok,1,38.71,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+408,KeepLane,ok,1,38.41,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+409,KeepLane,ok,1,38.11,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+410,KeepLane,ok,1,37.79,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+411,KeepLane,ok,1,37.45,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+412,KeepLane,ok,1,37.1,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+413,KeepLane,ok,1,36.74,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+414,KeepLane,ok,1,36.37,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+415,KeepLane,ok,1,35.99,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+416,KeepLane,ok,1,35.6,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+417,KeepLane,ok,1,35.2,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+418,Brake,fallback,1,34.79,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+419,Brake,fallback,1,34.37,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+420,Brake,fallback,1,33.97,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+421,Brake,fallback,1,33.57,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+422,Brake,fallback,1,33.18,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+423,Brake,fallback,1,32.8,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+424,Brake,fallback,1,32.44,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+425,Brake,fallback,1,32.08,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+426,Brake,fallback,1,31.73,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+427,Brake,fallback,1,31.39,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+428,Brake,fallback,1,31.07,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+429,Brake,fallback,1,30.75,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+430,Brake,fallback,1,30.45,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+431,Brake,fallback,1,30.15,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+432,Brake,fallback,1,29.87,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+433,Brake,fallback,1,29.59,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+434,Brake,fallback,1,29.33,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+435,Brake,fallback,1,29.07,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+436,Brake,fallback,1,28.83,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+437,Brake,fallback,1,28.6,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+438,Brake,fallback,1,28.37,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+439,Brake,fallback,1,28.16,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+440,Brake,fallback,1,27.96,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+441,Brake,fallback,1,27.77,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+442,Brake,fallback,1,27.59,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+443,Brake,fallback,1,27.42,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+444,Brake,fallback,1,27.25,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+445,Brake,fallback,1,27.1,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+446,Brake,fallback,1,26.97,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+447,Brake,fallback,1,26.84,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+448,Brake,fallback,1,26.72,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+449,Brake,fallback,1,26.61,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+450,Brake,fallback,1,24.31,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+451,Brake,fallback,1,26.42,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+452,Brake,fallback,1,24.1,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+453,Brake,fallback,1,24.02,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+454,Brake,fallback,1,23.94,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+455,Brake,fallback,1,23.88,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+456,Brake,fallback,1,23.83,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+457,Brake,fallback,1,23.8,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+458,Brake,fallback,1,23.78,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+459,Brake,fallback,1,23.77,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+460,Brake,fallback,1,23.77,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+461,Brake,fallback,1,23.79,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+462,Brake,fallback,1,23.81,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+463,Brake,fallback,1,23.85,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+464,Brake,fallback,1,23.89,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+465,Brake,fallback,1,23.95,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+466,Brake,fallback,1,24.02,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+467,Brake,fallback,1,24.1,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+468,Brake,fallback,1,24.18,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+469,Brake,fallback,1,24.28,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+470,Brake,fallback,1,24.39,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+471,Brake,fallback,1,24.51,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+472,Brake,fallback,1,24.64,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+473,Brake,fallback,1,24.78,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+474,Brake,fallback,1,24.93,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+475,Brake,fallback,1,25.09,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+476,Brake,fallback,1,25.27,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+477,Brake,fallback,1,25.45,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+478,ChangeLaneLeft,ok,1,25.64,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+479,ChangeLaneLeft,ok,1,25.85,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+480,ChangeLaneLeft,ok,1,26.08,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+481,ChangeLaneLeft,ok,1,26.33,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+482,ChangeLaneLeft,ok,1,26.62,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+483,ChangeLaneLeft,ok,1,26.94,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+484,KeepLane,ok,1,27.29,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+485,KeepLane,ok,1,27.67,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+486,KeepLane,ok,1,28.05,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+487,KeepLane,ok,1,28.42,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+488,KeepLane,ok,1,28.77,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+489,KeepLane,ok,1,29.12,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+490,Brake,fallback,1,9.83,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+491,Brake,fallback,1,10.15,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+492,Brake,fallback,1,10.49,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+493,Brake,fallback,1,10.84,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+494,Brake,fallback,1,11.18,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+495,Brake,fallback,1,11.53,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+496,Brake,fallback,1,11.88,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+497,Brake,fallback,1,12.23,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+498,Brake,fallback,1,12.57,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+499,Brake,fallback,1,12.92,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+500,Brake,fallback,1,13.26,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+501,Brake,fallback,1,13.61,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+502,Brake,fallback,1,13.95,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+503,Brake,fallback,1,14.29,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+504,Brake,fallback,1,14.63,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+505,Brake,fallback,1,14.97,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+506,Brake,fallback,1,15.31,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+507,Brake,fallback,1,15.65,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+508,Brake,fallback,1,15.99,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+509,Brake,fallback,1,16.32,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+510,Brake,fallback,1,16.66,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+511,Brake,fallback,1,17.0,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+512,Brake,fallback,1,17.33,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+513,Brake,fallback,1,17.67,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+514,Brake,fallback,1,18.0,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+515,Brake,fallback,1,18.34,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+516,Brake,fallback,1,18.67,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+517,Brake,fallback,1,19.01,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+518,Brake,fallback,1,19.34,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+519,Brake,fallback,1,19.68,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+520,Brake,fallback,1,20.01,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+521,Brake,fallback,1,20.34,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+522,Brake,fallback,1,20.68,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+523,Brake,fallback,1,21.01,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+524,Brake,fallback,1,21.35,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+525,Brake,fallback,1,21.68,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+526,Brake,fallback,1,22.01,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+527,Brake,fallback,1,22.35,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+528,Brake,fallback,1,22.68,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+529,Brake,fallback,1,23.02,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+530,Brake,fallback,1,23.35,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+531,Brake,fallback,1,23.68,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+532,Brake,fallback,1,24.02,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+533,Brake,fallback,1,24.35,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+534,Brake,fallback,1,24.69,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+535,Brake,fallback,1,25.02,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+536,Brake,fallback,1,25.35,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+537,Brake,fallback,1,25.69,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+538,Brake,fallback,1,26.02,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+539,Brake,fallback,1,26.35,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+540,Brake,fallback,1,26.69,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+541,Brake,fallback,1,27.01,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+542,Brake,fallback,1,27.31,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+543,Brake,fallback,1,27.62,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+544,ChangeLaneRight,ok,1,27.93,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+545,ChangeLaneRight,ok,1,28.25,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+546,ChangeLaneRight,ok,1,28.54,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+547,ChangeLaneRight,ok,1,28.83,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+548,ChangeLaneRight,ok,1,29.11,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+549,ChangeLaneRight,ok,1,29.37,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+550,ChangeLaneRight,ok,1,29.61,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+551,ChangeLaneRight,ok,1,29.85,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+552,ChangeLaneRight,ok,1,30.07,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+553,ChangeLaneRight,ok,1,30.27,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+554,ChangeLaneRight,ok,1,30.47,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+555,ChangeLaneRight,ok,1,30.65,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+556,ChangeLaneRight,ok,1,30.82,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+557,ChangeLaneRight,ok,1,30.98,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+558,ChangeLaneRight,ok,1,31.12,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+559,ChangeLaneRight,ok,1,31.25,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+560,ChangeLaneRight,ok,1,31.37,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+561,ChangeLaneRight,ok,1,31.49,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+562,ChangeLaneRight,ok,1,31.59,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+563,ChangeLaneRight,ok,1,31.68,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+564,ChangeLaneRight,ok,1,31.77,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+565,ChangeLaneRight,ok,1,31.84,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+566,ChangeLaneRight,ok,1,31.9,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+567,ChangeLaneRight,ok,1,31.97,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+568,ChangeLaneRight,ok,1,32.03,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+569,ChangeLaneRight,ok,1,32.09,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+570,ChangeLaneRight,ok,1,32.15,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+571,ChangeLaneRight,ok,1,32.2,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+572,ChangeLaneRight,ok,1,32.25,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+573,ChangeLaneRight,ok,1,32.32,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+574,KeepLane,ok,1,8.02,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+575,KeepLane,ok,1,7.96,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+576,KeepLane,ok,1,7.94,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+577,KeepLane,ok,1,7.89,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+578,KeepLane,ok,1,7.83,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+579,KeepLane,ok,1,7.85,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+580,KeepLane,ok,1,7.77,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+581,KeepLane,ok,1,7.75,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+582,KeepLane,ok,1,7.73,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+583,KeepLane,ok,1,7.65,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+584,KeepLane,ok,1,7.58,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+585,KeepLane,ok,1,7.51,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+586,KeepLane,ok,1,7.44,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+587,KeepLane,ok,1,7.3,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+588,KeepLane,ok,1,7.47,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+589,KeepLane,ok,1,7.58,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+590,KeepLane,ok,1,7.64,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+591,KeepLane,ok,1,7.67,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+592,KeepLane,ok,1,7.68,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+593,KeepLane,ok,1,7.68,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+594,KeepLane,ok,1,7.67,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+595,KeepLane,ok,1,7.66,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+596,KeepLane,ok,1,7.65,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+597,KeepLane,ok,1,7.63,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+598,KeepLane,ok,1,49.82,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+599,KeepLane,ok,1,49.53,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+600,KeepLane,ok,1,49.23,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+601,KeepLane,ok,1,48.92,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+602,KeepLane,ok,1,48.6,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+603,KeepLane,ok,1,48.27,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+604,KeepLane,ok,1,47.93,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+605,KeepLane,ok,1,49.78,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+606,KeepLane,ok,1,49.42,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+607,KeepLane,ok,1,49.04,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+608,KeepLane,ok,1,48.66,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+609,KeepLane,ok,1,48.26,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+610,KeepLane,ok,1,47.85,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+611,KeepLane,ok,1,47.44,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+612,KeepLane,ok,1,47.01,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+613,KeepLane,ok,1,46.57,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+614,KeepLane,ok,1,46.12,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+615,KeepLane,ok,1,45.66,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+616,ChangeLaneRight,ok,1,45.19,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+617,ChangeLaneRight,ok,1,44.72,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+618,ChangeLaneRight,ok,1,44.26,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+619,ChangeLaneRight,ok,1,43.82,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+620,ChangeLaneRight,ok,1,43.39,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+621,ChangeLaneRight,ok,1,42.98,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+622,ChangeLaneRight,ok,1,42.59,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+623,ChangeLaneRight,ok,1,42.21,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+624,ChangeLaneRight,ok,1,41.83,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+625,ChangeLaneRight,ok,1,41.46,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+626,ChangeLaneRight,ok,1,41.09,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+627,ChangeLaneRight,ok,1,40.73,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+628,ChangeLaneRight,ok,1,40.39,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+629,ChangeLaneRight,ok,1,40.07,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+630,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+631,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+632,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+633,ChangeLaneRight,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+634,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+635,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+636,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+637,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+638,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+639,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+640,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+641,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+642,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+643,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+644,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+645,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+646,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+647,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+648,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+649,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+650,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+651,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+652,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+653,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+654,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+655,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+656,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+657,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+658,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+659,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+660,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+661,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+662,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+663,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+664,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+665,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+666,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0
+667,KeepLane,ok,0,,Safe and comfortable driving.,0.5,3.0,3.0,2.0,-2.0,-2.0,1.0

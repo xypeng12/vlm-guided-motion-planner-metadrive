@@ -3,6 +3,7 @@ import numpy as np
 from metadrive.envs import MetaDriveEnv
 
 from utils import safe_getattr
+from config import BLOCK_DETECT_DIST_M, FRONT_RANGE_M, LIDAR_MAX_RANGE_M
 
 
 def get_adjacent_lanes(lane, env: Optional[MetaDriveEnv] = None) -> Tuple[Optional[Any], Optional[Any]]:
@@ -187,6 +188,22 @@ def get_adjacent_lanes(lane, env: Optional[MetaDriveEnv] = None) -> Tuple[Option
 
 
 def get_lidar_from_obs(obs: Any) -> Optional[np.ndarray]:
+    """
+    Extract the 240-ray lidar distance array from the MetaDrive obs vector.
+
+    MetaDrive's LidarStateObservation packs the flat obs as:
+        [ego_state(9) | navi_info(10) | num_others*4 surroundings | 240 lidar rays]
+
+    With num_others=4 the layout is:
+        indices 0–8    : ego state
+        indices 9–18   : navigation info
+        indices 19–34  : 4 closest vehicles × 4 dims (relative pos + vel)
+        indices 35–274 : 240 lidar ray distances (normalised 0-1, 1=clear)
+
+    We try named-key access first (dict obs), then fall back to slicing the
+    flat array using the known offsets.
+    """
+    # ── named-key obs (some MetaDrive variants / wrappers use dicts) ──────────
     if isinstance(obs, dict):
         for k in ["lidar", "Lidar", "lidar_state", "lidar_cloud", "point_cloud"]:
             if k in obs:
@@ -202,6 +219,30 @@ def get_lidar_from_obs(obs: Any) -> Optional[np.ndarray]:
                             return np.asarray(v[kk])
                         except Exception:
                             return None
+
+    # ── flat numpy array (default MetaDrive obs) ──────────────────────────────
+    # Layout with sensors configured in my_env.py vehicle_config:
+    #   base ego state              :  6 dims  (heading, speed, steering, actions, yaw)
+    #   side_detector cloud points  :  4 dims  (num_lasers=4, replaces 2-scalar default)
+    #   lane_line_detector points   :  4 dims  (num_lasers=4, replaces 1-scalar default)
+    #   navi info                   : 10 dims
+    #   num_others surroundings     : 16 dims  (4 vehicles × 4 dims)
+    #   lidar rays                  :240 dims
+    #   Total                       :280 dims
+    NUM_LIDAR_RAYS    = 240
+    EGO_DIM           = 6 + 4 + 4   # base + side_detector(4) + lane_line_detector(4)
+    NAVI_DIM          = 10
+    NUM_OTHERS        = 4            # must match lidar.num_others in my_env.py
+    OTHERS_DIM        = NUM_OTHERS * 4
+    LIDAR_START       = EGO_DIM + NAVI_DIM + OTHERS_DIM   # = 40
+
+    try:
+        arr = np.asarray(obs, dtype=np.float32).ravel()
+        if arr.size >= LIDAR_START + NUM_LIDAR_RAYS:
+            return arr[LIDAR_START: LIDAR_START + NUM_LIDAR_RAYS]
+    except Exception:
+        pass
+
     return None
 
 
@@ -209,19 +250,33 @@ def block_ahead_from_lidar(
     lidar: Optional[np.ndarray],
     dist_th: float = 18.0,
     lateral_th: float = 2.5,
+    max_range: float = LIDAR_MAX_RANGE_M,
 ) -> Tuple[bool, Optional[float]]:
+    """Detect an obstacle in the forward cone of the lidar.
+
+    MetaDrive's 240-ray lidar returns *normalised* distances in [0, 1]
+    where 1.0 = no obstacle within ``max_range`` metres and 0.0 = contact.
+    We convert to metres before comparing against ``dist_th``.
+    """
     if lidar is None:
         return False, None
 
-    x = np.asarray(lidar)
+    x = np.asarray(lidar, dtype=np.float32)
 
     if x.ndim == 1 and x.size > 0:
-        dmin = float(np.min(x))
+        # Only look at the *forward* cone.  With 240 rays spanning 360°,
+        # the forward ±20° sector is approximately rays 0-13 and 227-239.
+        # This narrow cone avoids false positives from adjacent-lane traffic.
+        n = x.size
+        sector = max(1, n // 18)     # ±20° on each side of forward
+        fwd_idx = np.concatenate([np.arange(0, sector), np.arange(n - sector, n)])
+        fwd = x[fwd_idx] * max_range          # normalised → metres
+        dmin = float(np.min(fwd))
         return (dmin < dist_th), dmin
 
     if x.ndim == 2 and x.shape[0] > 0 and x.shape[1] >= 2:
-        forward = x[:, 0]
-        lateral = x[:, 1]
+        forward = x[:, 0] * max_range
+        lateral = x[:, 1] * max_range
         mask = (forward > 0.0) & (np.abs(lateral) < lateral_th)
         if np.any(mask):
             dmin = float(np.min(forward[mask]))
@@ -331,7 +386,17 @@ def build_state_summary(env: MetaDriveEnv, obs: Any) -> Dict[str, Any]:
                     vx, vy = spd * np.cos(yaw), spd * np.sin(yaw)
 
                 traffic_states.append({"x": px, "y": py, "vx": vx, "vy": vy})
-                obs_pts.append([px, py])
+                # Add front+rear points per vehicle for better collision geometry.
+                # A car is ~4.5m long, ~2m wide. Use heading to project corners.
+                tv_yaw = float(safe_getattr(tv, "heading_theta", 0.0))
+                half_len = 2.2
+                half_wid = 1.0
+                cx, cy = np.cos(tv_yaw), np.sin(tv_yaw)
+                for dl in (-half_len, 0.0, half_len):
+                    for dw in (-half_wid, 0.0, half_wid):
+                        ox = px + dl * cx - dw * cy
+                        oy = py + dl * cy + dw * cx
+                        obs_pts.append([ox, oy])
     except Exception:
         pass
 
@@ -374,23 +439,84 @@ def build_state_summary(env: MetaDriveEnv, obs: Any) -> Dict[str, Any]:
         pts_world = arr[np.sort(idx)]
         summary["obstacle_points_world"] = pts_world.tolist()
 
-    # block detection: lidar first
-    lidar = get_lidar_from_obs(obs)
-    block_ahead, dist = block_ahead_from_lidar(lidar, dist_th=18.0, lateral_th=2.5)
-    if block_ahead:
-        summary["block_ahead"] = True
-        summary["dist_to_block_m"] = dist
-    else:
-        if pts_world is not None and len(pts_world) > 0:
-            ba2, d2 = estimate_block_ahead_from_points_on_lane(
-                env, pts_world, front_m=35.0, lane_half_width=2.0, ignore_radius_m=2.0
-            )
-            summary["block_ahead"] = bool(ba2)
-            summary["dist_to_block_m"] = d2
+    # block detection: use traffic states with closing-speed filter as primary.
+    # Only flag a vehicle as a "block" if it is both in the ego lane AND
+    # the ego is closing on it (i.e. ego is faster, or it is stationary).
+    if traffic_states and lane is not None:
+        ego_fwd_speed = ego_speed  # scalar along heading
+        c_ego = float(np.cos(ego_yaw))
+        s_ego = float(np.sin(ego_yaw))
+        try:
+            s0, _ = lane.local_coordinates((ego_x, ego_y))
+        except Exception:
+            s0 = 0.0
 
-    # TTC rough
+        best_ds = None
+        for st in traffic_states:
+            px, py = st["x"], st["y"]
+            if np.hypot(px - ego_x, py - ego_y) < 2.0:
+                continue
+            try:
+                s_t, l_t = lane.local_coordinates((px, py))
+            except Exception:
+                continue
+            ds = float(s_t - s0)
+            if ds <= 0.0 or ds > FRONT_RANGE_M:
+                continue
+            if abs(float(l_t)) > 2.0:  # not in ego lane
+                continue
+            # closing speed: project target velocity along lane
+            tv_long = st["vx"] * c_ego + st["vy"] * s_ego
+            closing = ego_fwd_speed - tv_long  # positive = ego approaching
+            # Only flag as block if closing > 1 m/s OR target is very slow
+            if closing < 1.0 and tv_long > 3.0:
+                continue
+            if best_ds is None or ds < best_ds:
+                best_ds = ds
+        if best_ds is not None:
+            summary["block_ahead"] = True
+            summary["dist_to_block_m"] = float(best_ds)
+
+    # Also check static objects on lane (no velocity → always a block)
+    if not summary["block_ahead"] and pts_world is not None and len(pts_world) > 0:
+        # Only use non-traffic obstacle points (static objects)
+        traffic_xy = set()
+        for st in traffic_states:
+            traffic_xy.add((round(st["x"], 1), round(st["y"], 1)))
+        static_pts = [p for p in obs_pts if (round(p[0], 1), round(p[1], 1)) not in traffic_xy]
+        if static_pts:
+            static_arr = np.asarray(static_pts, dtype=np.float32)
+            ba_static, d_static = estimate_block_ahead_from_points_on_lane(
+                env, static_arr, front_m=FRONT_RANGE_M, lane_half_width=2.0, ignore_radius_m=2.0
+            )
+            if ba_static:
+                summary["block_ahead"] = True
+                summary["dist_to_block_m"] = d_static
+
+    # Emergency lidar fallback: very close obstacles (< 10m) not in traffic manager
+    if not summary["block_ahead"]:
+        lidar = get_lidar_from_obs(obs)
+        block_lidar, dist_lidar = block_ahead_from_lidar(
+            lidar, dist_th=min(10.0, BLOCK_DETECT_DIST_M), lateral_th=2.5
+        )
+        if block_lidar:
+            summary["block_ahead"] = True
+            summary["dist_to_block_m"] = dist_lidar
+
+    # TTC rough + alongside-vehicle detection + target-lane forward gap
     min_ttc_left = None
     min_ttc_right = None
+    # Also track if any vehicle is alongside (within longitudinal range) in
+    # the adjacent lane — these have infinite TTC but are still dangerous.
+    alongside_left = False
+    alongside_right = False
+    # Track the nearest vehicle AHEAD in the adjacent lane (any speed).
+    # This catches slower vehicles 12-30 m ahead that slip through the
+    # alongside window and the TTC filter (which requires closing speed).
+    nearest_left_fwd = float("inf")
+    nearest_right_fwd = float("inf")
+    _LANE_LATERAL_LO = 1.5   # inner edge of adjacent-lane lateral band
+    _LANE_LATERAL_HI = 6.0   # outer edge
 
     c = float(np.cos(ego_yaw))
     s = float(np.sin(ego_yaw))
@@ -404,6 +530,22 @@ def build_state_summary(env: MetaDriveEnv, obs: Any) -> Dict[str, Any]:
     for st in traffic_states:
         px, py, vx, vy = st["x"], st["y"], st["vx"], st["vy"]
         forward, lateral = rel_long_lat(px, py)
+
+        # Check for alongside vehicles: within ±8m longitudinally and in
+        # the lateral band corresponding to an adjacent lane (~2.5-6m away).
+        if -6.0 < forward < 12.0:
+            if _LANE_LATERAL_LO < lateral < _LANE_LATERAL_HI:
+                alongside_left = True
+            elif -_LANE_LATERAL_HI < lateral < -_LANE_LATERAL_LO:
+                alongside_right = True
+
+        # Track nearest vehicle ahead in adjacent lane (regardless of speed)
+        if 0.0 < forward < 35.0:
+            if _LANE_LATERAL_LO < lateral < _LANE_LATERAL_HI:
+                nearest_left_fwd = min(nearest_left_fwd, forward)
+            elif -_LANE_LATERAL_HI < lateral < -_LANE_LATERAL_LO:
+                nearest_right_fwd = min(nearest_right_fwd, forward)
+
         if forward <= 0.0 or forward > 40.0:
             continue
 
@@ -423,9 +565,18 @@ def build_state_summary(env: MetaDriveEnv, obs: Any) -> Dict[str, Any]:
     summary["min_ttc_left"] = min_ttc_left
     summary["min_ttc_right"] = min_ttc_right
 
+    # Minimum forward clearance in target lane to allow a lane change.
+    # Must be far enough that by the time ego completes the manoeuvre (~2-3 s)
+    # it won't close the gap.  15 m ≈ 1.5 s at typical 10 m/s delta.
+    _MIN_TARGET_LANE_GAP_M = 15.0
+
     if summary["has_left_lane"]:
-        summary["gap_left_ok"] = (min_ttc_left is None) or (min_ttc_left > 3.0)
+        ttc_ok = (min_ttc_left is None) or (min_ttc_left > 3.0)
+        fwd_ok = nearest_left_fwd > _MIN_TARGET_LANE_GAP_M
+        summary["gap_left_ok"] = ttc_ok and (not alongside_left) and fwd_ok
     if summary["has_right_lane"]:
-        summary["gap_right_ok"] = (min_ttc_right is None) or (min_ttc_right > 3.0)
+        ttc_ok = (min_ttc_right is None) or (min_ttc_right > 3.0)
+        fwd_ok = nearest_right_fwd > _MIN_TARGET_LANE_GAP_M
+        summary["gap_right_ok"] = ttc_ok and (not alongside_right) and fwd_ok
 
     return summary

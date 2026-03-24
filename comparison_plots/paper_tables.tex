@@ -1,0 +1,113 @@
+% ============================================================
+% Smoothness Score Definition
+% ============================================================
+% The smoothness metric captures ride jerkiness by combining
+% steering rate and longitudinal jerk.
+% Lower values indicate smoother driving.
+%
+% Equation (paste into your paper):
+\begin{equation}
+  S_{\text{smooth}} = \frac{1}{2}\,\frac{\mathrm{RMS}(\Delta\delta)}{\overline{\mathrm{RMS}(\Delta\delta)}}
+  \;+\; \frac{1}{2}\,\frac{\mathrm{RMS}(\Delta a)}{\overline{\mathrm{RMS}(\Delta a)}}
+  \label{eq:smoothness}
+\end{equation}
+% where RMS(\Delta\delta) = sqrt(mean((\delta_{i+1}-\delta_i)^2)),
+% and the overline denotes the cross-run mean of that component.
+% Normalizing by the cross-run mean ensures both components
+% contribute equally regardless of their raw magnitude.
+
+% ============================================================
+% Table 1: Full performance comparison
+% ============================================================
+\begin{table}[htbp]
+\centering
+\caption{Performance comparison across all configurations. Bold = best. Smoothness defined in Eq.~\eqref{eq:smoothness}.}
+\label{tab:full_comparison}
+\small
+\begin{tabular}{l c c c c c c}
+\toprule
+Configuration & Steps & Avg Speed & Lane & Crash & Smoothness & Broken \\
+              &       & (km/h)    & Changes & Steps & Score & Lines \\
+\midrule
+PP+BS & 751 & 31.3 & 17 & 37 & 1.1256 & 209 \\
+PP+CL & \textbf{518} & \textbf{45.4} & 18 & \textbf{0} & \textbf{0.8199} & 94 \\
+ST+BS & 562 & 42.0 & 17 & \textbf{0} & 1.0353 & 105 \\
+ST+CL & 568 & 41.6 & 18 & \textbf{0} & 1.1087 & 90 \\
+\midrule
+VLM+PP+BS & 526 & 44.6 & \textbf{16} & \textbf{0} & 0.8306 & 92 \\
+VLM+PP+CL & 737 & 32.0 & 22 & \textbf{0} & 1.0275 & 192 \\
+VLM+ST+BS & 634 & 37.2 & 17 & 3 & 1.1288 & 115 \\
+VLM+ST+CL & 619 & 38.0 & \textbf{16} & 8 & 0.9236 & \textbf{82} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ============================================================
+% Table 2: Controller comparison (averaged)
+% ============================================================
+\begin{table}[htbp]
+\centering
+\caption{Controller comparison averaged over curve generator and VLM settings.}
+\label{tab:controller_comparison}
+\begin{tabular}{l c c c c c}
+\toprule
+Controller & Avg Speed & Crash Steps & Smoothness & Lane Changes & Broken Lines \\
+\midrule
+Pure Pursuit & 38.3 & 9.2 & 0.9509 & 18.2 & 146.8 \\
+Stanley & 39.7 & 2.8 & 1.0491 & 17.0 & 98.0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ============================================================
+% Table 3: Curve generator comparison (averaged)
+% ============================================================
+\begin{table}[htbp]
+\centering
+\caption{Curve generator comparison averaged over controller and VLM settings.}
+\label{tab:curve_comparison}
+\begin{tabular}{l c c c c c}
+\toprule
+Curve Generator & Avg Speed & Crash Steps & Smoothness & Lane Changes & Broken Lines \\
+\midrule
+B-Spline & 38.8 & 10.0 & 1.0301 & 16.8 & 130.2 \\
+Clothoid & 39.2 & 2.0 & 0.9699 & 18.5 & 114.5 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ============================================================
+% Table 4: VLM effect (averaged)
+% ============================================================
+\begin{table}[htbp]
+\centering
+\caption{Effect of VLM-guided planning with safe instruction, averaged over all controller and curve combinations.}
+\label{tab:vlm_effect}
+\begin{tabular}{l c c c c c}
+\toprule
+Mode & Avg Speed & Total Steps & Smoothness & Lane Changes & Crash Steps \\
+\midrule
+Baseline & 40.1 & 600 & 1.0224 & 17.5 & 9.2 \\
+VLM (safe) & 38.0 & 629 & 0.9776 & 17.8 & 2.8 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ============================================================
+% Table 5: Pairwise VLM improvement per configuration
+% ============================================================
+\begin{table}[htbp]
+\centering
+\caption{Pairwise change from adding VLM (safe). Negative $\Delta$ = improvement for cost/crash/smoothness.}
+\label{tab:pairwise_vlm}
+\begin{tabular}{l c c c c c}
+\toprule
+Config Pair & $\Delta$ Steps & $\Delta$ Speed & $\Delta$ Smoothness & $\Delta$ Crashes & $\Delta$ Lane Ch. \\
+\midrule
+PP+BS $\to$ VLM+PP+BS & -225 & +13.3 & -0.2951 & -37 & -1 \\
+PP+CL $\to$ VLM+PP+CL & +219 & -13.4 & +0.2077 & 0 & +4 \\
+ST+BS $\to$ VLM+ST+BS & +72 & -4.7 & +0.0936 & +3 & 0 \\
+ST+CL $\to$ VLM+ST+CL & +51 & -3.6 & -0.1852 & +8 & -2 \\
+\bottomrule
+\end{tabular}
+\end{table}

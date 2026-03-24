@@ -7,9 +7,9 @@ import numpy as np
 
 @dataclass
 class Weights:
-    w_efficiency: float = 0.9
-    w_comfort: float = 0.7
-    w_safety: float = 1.2
+    w_efficiency: float = 1.0
+    w_comfort: float = 1.0
+    w_safety: float = 1.0
 
 def curvature_cost(traj: np.ndarray) -> float:
     if traj is None or len(traj) < 5:
