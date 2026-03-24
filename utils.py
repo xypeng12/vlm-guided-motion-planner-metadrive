@@ -1,7 +1,12 @@
 from typing import Optional
 
-import torch
 import numpy as np
+
+try:
+    import torch
+    _TORCH_AVAILABLE = True
+except Exception:
+    _TORCH_AVAILABLE = False
 
 def safe_getattr(obj, name: str, default=None):
     try:
@@ -31,8 +36,15 @@ def to_uint8(frame: np.ndarray) -> Optional[np.ndarray]:
     return np.clip(f, 0.0, 255.0).astype(np.uint8)
 
 def pick_device() -> str:
-    # Prefer MPS on Apple Silicon, else CPU
-    if torch.backends.mps.is_available():
-        return "mps"
+    """Return 'mps' on Apple Silicon, 'cuda' if available, else 'cpu'."""
+    if not _TORCH_AVAILABLE:
+        return "cpu"
+    try:
+        if torch.backends.mps.is_available():
+            return "mps"
+        if torch.cuda.is_available():
+            return "cuda"
+    except Exception:
+        pass
     return "cpu"
 
